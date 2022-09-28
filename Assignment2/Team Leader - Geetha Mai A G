@@ -1,4 +1,3 @@
-
 from random import randint
 def temperature():
 	return randint(1,100)
