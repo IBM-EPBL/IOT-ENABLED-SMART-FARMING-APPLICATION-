@@ -1,0 +1,35 @@
+#Question-1
+:
+# I )WRITE A PYTHON PROGRAM TO BLINK AN LED IN RASPBERRY PI...
+PYTHON CODE :
+Import RPi.GPIO as GPID 
+from time import sleep
+GPIO.setwarnings(False)
+GPID.setmode (GPIO. BOARD) 
+GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW)
+value to low (off)
+while True;
+   GPIO.output (8, GPIO.HIGH)
+   sleep(1) 
+   GPIO.output (8, GPIO.LOW)
+   sleep(1)
+
+# II) WRITE A PYTHON CODE FOR BLINKING TRAFFIC LIGHTS FOR RASPBERRY PI...
+Python code :
+from gpiozero import Button,TrafficLights
+from time import sleep
+button=Button(21)
+lights=TrafficLights(14,8,7) 
+While True:
+     button.wait_for_press()
+     light.green.on()
+     sleep(1)
+     lights.amber.on()
+     sleep(1)
+     lights.red.on()
+     sleep(1)
+     lights.off()
+      
+      
+      
+     # by joicy(922119106036)
